@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>11ty Example Site</title>
+  <subtitle>A minimal 11ty starter site, designed to be used with 11ty CMS.</subtitle>
+  <link href="https://example.com/feed.xml" rel="self"/>
+  <link href="https://example.com/"/>
+  <updated>2026-06-20T00:00:00.000Z</updated>
+  <id>https://example.com/</id>
+  <author><name>Raylu42x</name></author>
+  <entry>
+    <title>Styling tips for a minimal blog</title>
+    <link href="https://example.com/posts/styling-tips/"/>
+    <updated>2026-06-18T00:00:00.000Z</updated>
+    <id>https://example.com/posts/styling-tips/</id>
+    <summary>A few small choices that make a plain blog feel intentional rather than empty.</summary>
+  </entry>
+  <entry>
+    <title>Hello, world</title>
+    <link href="https://example.com/posts/hello-world/"/>
+    <updated>2026-06-20T00:00:00.000Z</updated>
+    <id>https://example.com/posts/hello-world/</id>
+    <summary>A first post to demonstrate the example site and CMS frontmatter fields.</summary>
+  </entry>
+</feed>

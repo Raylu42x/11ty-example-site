@@ -1,0 +1,13 @@
+{
+  "name": "11ty-example-site",
+  "version": "1.0.0",
+  "description": "A minimal 11ty starter site, designed to be used with https://github.com/Raylu42x/11ty-cms.",
+  "license": "MIT",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy --output=docs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

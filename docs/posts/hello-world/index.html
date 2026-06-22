@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, world · 11ty Example Site</title>
+    <meta name="description" content="A first post to demonstrate the example site and CMS frontmatter fields.">
+    <link rel="alternate" type="application/atom+xml" title="11ty Example Site" href="/feed.xml">
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #1a1a1a;
+        --muted: #6b6b6b;
+        --accent: #2b6cb0;
+        --rule: #e5e5e5;
+        --code-bg: #f4f4f5;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111315;
+          --fg: #e8e8e8;
+          --muted: #9aa0a6;
+          --accent: #7ab7ff;
+          --rule: #2a2d31;
+          --code-bg: #1c1f22;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        color: var(--fg);
+        background: var(--bg);
+      }
+      .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+      a { color: var(--accent); }
+      a:hover { text-decoration: none; }
+      header.site { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+      header.site .title { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: var(--fg); }
+      header.site nav a { margin-left: 1rem; color: var(--muted); text-decoration: none; }
+      header.site nav a:hover { color: var(--fg); }
+      h1, h2, h3 { line-height: 1.25; }
+      h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+      h2 { font-size: 1.35rem; margin-top: 2.5rem; }
+      hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+      img { max-width: 100%; height: auto; }
+      pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+      pre { background: var(--code-bg); padding: 1rem; border-radius: 6px; overflow-x: auto; }
+      code { background: var(--code-bg); padding: .1em .35em; border-radius: 4px; }
+      pre code { background: none; padding: 0; }
+      blockquote { margin: 1.5rem 0; padding: .25rem 1rem; border-left: 3px solid var(--rule); color: var(--muted); }
+      .post-meta { color: var(--muted); font-size: .92rem; margin-bottom: 2rem; }
+      .post-list { list-style: none; padding: 0; }
+      .post-list li { margin: 1.5rem 0; padding-bottom: 1.5rem; border-bottom: 1px solid var(--rule); }
+      .post-list li:last-child { border-bottom: 0; }
+      .post-list h2 { margin: 0 0 .25rem; font-size: 1.2rem; }
+      .post-list h2 a { color: var(--fg); text-decoration: none; }
+      .post-list h2 a:hover { color: var(--accent); }
+      .post-list time { color: var(--muted); font-size: .9rem; }
+      footer.site { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <a href="/" class="title">11ty Example Site</a>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/feed.xml">Feed</a>
+        </nav>
+      </header>
+      <main>
+        <article>
+  <h1>Hello, world</h1>
+  <p class="post-meta">
+    <time datetime="2026-06-20T00:00:00.000Z">June 20, 2026</time>
+    
+       · <span>#intro</span>
+    
+  </p>
+  <p>Welcome to the <strong>11ty Example Site</strong>. This post exists to show what a typical
+entry in the <code>posts</code> collection looks like.</p>
+<h2>Frontmatter</h2>
+<p>Every post in <code>src/posts/</code> is expected to have at least these fields:</p>
+<ul>
+<li><code>title</code> — the post heading</li>
+<li><code>date</code> — publish date (ISO <code>YYYY-MM-DD</code>)</li>
+<li><code>draft</code> — <code>true</code> hides the post from listings</li>
+<li><code>tags</code> — an array of tags; <code>post</code> is added automatically by <code>posts.json</code></li>
+<li><code>description</code> — shown on the home page and in feed entries</li>
+</ul>
+<h2>Images</h2>
+<p>Drop images into <code>src/assets/</code> and reference them like this:</p>
+<p><img src="/assets/sample.jpg" alt="Sample image"></p>
+<p>That's it. Edit <code>src/posts/hello-world.md</code> to make your own.</p>
+
+</article>
+
+<hr>
+<p><a href="/">← Back to all posts</a></p>
+
+      </main>
+      <footer class="site">
+        © 2026 Raylu42x ·
+        Built with <a href="https://www.11ty.dev/">Eleventy</a>.
+      </footer>
+    </div>
+  </body>
+</html>
