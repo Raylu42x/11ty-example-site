@@ -23,6 +23,6 @@ Every post in `src/posts/` is expected to have at least these fields:
 
 Drop images into `src/assets/` and reference them like this:
 
-![Sample image](/assets/sample.jpg)
+![Sample image]({{ '/assets/sample.jpg' | url }})
 
 That's it. Edit `src/posts/hello-world.md` to make your own.

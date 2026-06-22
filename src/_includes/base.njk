@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ description or site.description }}">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | url }}">
     <style>
       :root {
         --bg: #ffffff;
@@ -66,11 +66,11 @@
   <body>
     <div class="wrap">
       <header class="site">
-        <a href="/" class="title">{{ site.title }}</a>
+        <a href="{{ '/' | url }}" class="title">{{ site.title }}</a>
         <nav>
-          <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/feed.xml">Feed</a>
+          <a href="{{ '/' | url }}">Home</a>
+          <a href="{{ '/about/' | url }}">About</a>
+          <a href="{{ '/feed.xml' | url }}">Feed</a>
         </nav>
       </header>
       <main>

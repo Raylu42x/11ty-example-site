@@ -28,5 +28,6 @@ module.exports = function (eleventyConfig) {
   return {
     dir: { input: 'src', output: 'docs', includes: '_includes', data: '_data' },
     markdownTemplateEngine: 'njk',
+    pathPrefix: '/11ty-example-site/',
   };
 };
